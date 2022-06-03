@@ -1,2 +1,2 @@
 # javascript
-Conteúdo de apoio
+Support content
