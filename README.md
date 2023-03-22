@@ -1,2 +1,3 @@
 # javascript
-Support content
+
+Exercises with JavaScript
