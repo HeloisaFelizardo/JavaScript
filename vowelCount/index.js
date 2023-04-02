@@ -5,7 +5,7 @@ Consideraremos a, e, i, o, ucomo vogais para este Kata (mas não y).
 A string de entrada consistirá apenas em letras minúsculas e/ou espaços.*/
 
 const getCount = (str) => {
-	return (str.match(/[aeiou]/g) || []).length;
+	return (str.match(/[aeiou]/gi) || []).length;
 };
 console.log(getCount('abracadabra'), 5);
 console.log(getCount('abracadabra abracadabra'), 10);

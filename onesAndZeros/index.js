@@ -14,13 +14,7 @@ Testing: [1, 1, 1, 1] ==> 15
 Testing: [1, 0, 1, 1] ==> 11
 No entanto, as matrizes podem ter comprimentos variados, não apenas limitados a 4. */
 
-const binaryArrayToNumber = (arr) => {
-	// your code
-	arr.reverse().map((n) => {
-		return (n += Math.pow(n, 2));
-	});
-	return arr;
-};
+const binaryArrayToNumber = (arr) => parseInt(arr.join(''), 2);
 
 console.log(binaryArrayToNumber([0, 0, 0, 1]), 1);
 console.log(binaryArrayToNumber([0, 0, 1, 0]), 2);
