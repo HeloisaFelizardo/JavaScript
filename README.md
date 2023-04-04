@@ -2,4 +2,4 @@
 
 Exercises with JavaScript
 
-review getCount
+review isPangram

@@ -39,22 +39,24 @@ N = 11, the answer will be 2
 
 #Output: O número de vezes que você encontrou um número inteiro que era divisível por N
 */
+function contarSubstringsDivisiveis(n) {
+	let count = 0;
+	let strN = n.toString();
 
-function getCount(n) {
-	//n is an integer.
-	//Code goes here!
-
-	return n
-		.toString()
-		.split('')
-		.reduce((a, b) => {
-			return a % Number(b) === 0;
-		}, Number(n));
+	for (let i = 0; i < strN.length; i++) {
+		for (let j = i; j <= strN.length; j++) {
+			let substr = strN.slice(i, j);
+			if (n % substr === 0) {
+				count++;
+			}
+		}
+	}
+	return count - 1;
 }
-
-console.log(getCount(123), 2);
-console.log(getCount(1230), 5);
-console.log(getCount(1), 0);
-console.log(getCount(11), 2);
-console.log(getCount(1111111111), 25);
-console.log(getCount(877692));
+console.log(contarSubstringsDivisiveis(123), 2);
+console.log(contarSubstringsDivisiveis(1230), 5);
+console.log(contarSubstringsDivisiveis(1), 0);
+console.log(contarSubstringsDivisiveis(11), 2);
+console.log(contarSubstringsDivisiveis(1111111111), 25);
+console.log(contarSubstringsDivisiveis(877692));
+console.log(contarSubstringsDivisiveis(124));
