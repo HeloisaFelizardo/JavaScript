@@ -4,7 +4,7 @@ Mas você é uma pessoa ambiciosa. Você quer saber se é melhor do que o aluno 
 
 Você recebe uma matriz com as pontuações dos testes de seus colegas. Agora calcule a média e compare sua pontuação!
 
-Volte Truese estiver melhor, caso contrário False!
+Volte True se estiver melhor, caso contrário False!
 
 Observação:
 Seus pontos não estão incluídos na matriz de pontos de sua classe. Para calcular o ponto médio, você pode adicionar seu ponto à matriz fornecida!
@@ -12,6 +12,7 @@ Seus pontos não estão incluídos na matriz de pontos de sua classe. Para calcu
 
 function betterThanAverage(classPoints, yourPoints) {
 	// Your code here
+
 	classPoints.push(yourPoints);
 
 	let sum = 0;
@@ -21,11 +22,7 @@ function betterThanAverage(classPoints, yourPoints) {
 
 	let media = sum / classPoints.length;
 
-	if (yourPoints > media) {
-		return true;
-	} else {
-		return false;
-	}
+	return yourPoints > media;
 }
 
 /* 
