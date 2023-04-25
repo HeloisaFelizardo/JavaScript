@@ -7,7 +7,7 @@ Código Condição de pagamento:
 3 - Em duas vezes, preço normal de etiqueta sem juros;
 4 - Acima de duas vezes, preço normal de etiqueta mais juros de 10%; */
 
-const valorPago = (precoEtiqueta = 0, formaDePagamento = 0) => {
+const calcularJuros = (precoEtiqueta = 0, formaDePagamento = 0) => {
 	return formaDePagamento === 1
 		? (precoEtiqueta - precoEtiqueta * 0.1).toFixed(2)
 		: formaDePagamento === 2
@@ -17,7 +17,7 @@ const valorPago = (precoEtiqueta = 0, formaDePagamento = 0) => {
 		: (precoEtiqueta + precoEtiqueta * 0.1).toFixed(2);
 };
 
-console.log(valorPago(100, 1), 'debito');
-console.log(valorPago(100, 2), 'A vista no dinheiro ou pix');
-console.log(valorPago(100, 3), '2x sem Juros');
-console.log(valorPago(100, 4), 'Acima de 2x');
+console.log(calcularJuros(100, 1), 'debito');
+console.log(calcularJuros(100, 2), 'A vista no dinheiro ou pix');
+console.log(calcularJuros(100, 3), '2x sem Juros');
+console.log(calcularJuros(100, 4), 'Acima de 2x');
