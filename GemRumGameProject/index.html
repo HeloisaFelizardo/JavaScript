@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Gem run game</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<nav id="navbar">
+			<a href="" class="nav-brand">Gem run game</a>
+			<ul>
+				<li class="nav-item nav-stats">
+					Score <span id="show-score"></span>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="container" id="main">
+			<div>
+				<h2>Collect coins</h2>
+				<p class="collection-description">
+					Every coin is worth a score of 10
+				</p>
+				<button id="collect-coin" class="btn btn-default">
+					Collect coin
+				</button>
+				<p id="coins-collected" class="collection-stat">
+					0 coins collected
+				</p>
+			</div>
+
+			<div>
+				<h2>Collect gems</h2>
+				<p class="collection-description">
+					Every gem is worth a score of 50
+				</p>
+				<button id="collect-gem" class="btn btn-outline">
+					Collect gem
+				</button>
+				<p id="gems-collected" class="collection-stat">
+					0 gems collected
+				</p>
+			</div>
+		</div>
+		<script src="index.js" type="module"></script>
+	</body>
+</html>

@@ -5,3 +5,4 @@ Exercises with JavaScript
 Acrescentar no portifólio:
 
 -   toDoAppProject
+-   GemRumGameProject
