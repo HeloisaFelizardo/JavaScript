@@ -2,7 +2,7 @@
 
 /* Nessa versão da classe Stack, usaremos uma propriedade count para nos ajudar a manter o controle do tamanho da pilha (e, consequentemente, para nos ajudar também a adicionar e a remover elementos da estrutura de dados) */
 
-class Stack {
+export class Stack {
 	constructor() {
 		this.count = 0; // propriedade para ajudar a manter o tamanho da pilha
 		this.items = {};
@@ -70,50 +70,3 @@ stack.push(8);
 console.log(Object.getOwnPropertyNames(stack));
 console.log(Object.keys(stack));
 console.log(stack.items);
-
-//Convertendo números decimais para binários.
-function decimalToBinary(decNumber) {
-	const remStack = new Stack();
-	let number = decNumber;
-	let rem;
-	let binaryString = '';
-	while (number > 0) {
-		rem = Math.floor(number % 2);
-		remStack.push(rem);
-		number = Math.floor(number / 2);
-	}
-	while (!remStack.isEmpty()) {
-		binaryString += remStack.pop().toString();
-	}
-	return binaryString;
-}
-
-console.log(decimalToBinary(233));
-console.log(decimalToBinary(10));
-console.log(decimalToBinary(1000));
-
-//Algoritmo conversor de base
-function baseConverter(decNumber, base) {
-	const remStack = new Stack();
-	const digits = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-	let number = decNumber;
-	let rem;
-	let baseString = '';
-	if (!(base >= 2 && base <= 36)) {
-		return '';
-	}
-	while (number > 0) {
-		rem = Math.floor(number % base);
-		remStack.push(rem);
-		number = Math.floor(number / base);
-	}
-	while (!remStack.isEmpty()) {
-		baseString += digits[remStack.pop()];
-	}
-	return baseString;
-}
-
-console.log(baseConverter(100345, 2));
-console.log(baseConverter(100345, 8));
-console.log(baseConverter(100345, 16));
-console.log(baseConverter(100345, 35));

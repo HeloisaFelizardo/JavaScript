@@ -1,5 +1,5 @@
 //O Deque implementa tanto o FIFO quanto o LIFO
-class Deque {
+export class Deque {
 	constructor() {
 		this.count = 0;
 		this.lowestCount = 0;
@@ -96,7 +96,7 @@ class Deque {
 	}
 }
 
-const deque = new Deque();
+/* const deque = new Deque();
 
 console.log(deque.isEmpty());
 deque.addBack('John');
@@ -112,3 +112,4 @@ deque.removeBack();
 console.log(deque.toString());
 deque.addFront('John');
 console.log(deque.toString());
+ */
