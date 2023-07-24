@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,21 +9,26 @@
 	<body>
 		<nav id="navbar">
 			<a href="" class="nav-brand">App</a>
-			<ul class="menu-links">
-				<a href="login.html" target="_blank">Login</a>
-				<a href="register.html" target="_blank">Register</a>
+			<ul>
+				<li class="nav-item"><a href="about.html">About us</a></li>
+				<li><a href="" class="nav-item btn btn-default">Register</a></li>
 			</ul>
 		</nav>
 
 		<div class="container" id="main">
 			<h1>Welcome to our app</h1>
 			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, voluptatem.</p>
-			<p>Welcome!</p>
-			<a href="login.html" target="_blank">Get started</a>
+			<p id="welcome-message">
+				Welcome to your
+				<strong>beautiful</strong>
+				website!
+			</p>
+			<div id="user-card" data-user-id="34" data-is-active="true">
+				<h3>Sam Green</h3>
+			</div>
 		</div>
 
 		<footer id="footer-wrapper">
-			<p>2019</p>
 			<a href="about.html" target="_blank">About us</a>
 			<a href="contact.html" target="_blank">Contact us</a>
 		</footer>
