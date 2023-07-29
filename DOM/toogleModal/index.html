@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<title>Page</title>
+	</head>
+	<body>
+		<nav>
+			<h1>Attendees</h1>
+		</nav>
+		<ul id="list">
+			<li class="deletable" tabindex="0">Sam Koein</li>
+			<li class="deletable" tabindex="0">Lee Bron</li>
+		</ul>
+		<div id="app-modal" class="modal">
+			<h1><div class="container">New attendee</div></h1>
+			<div class="container">
+				<form id="attendee-form">
+					<label>Name:</label>
+					<input type="text" class="textfield" placeholder="Name of attendee" id="attendee-name" />
+					<input type="submit" class="btn" />
+				</form>
+			</div>
+		</div>
+		<button id="fab" class="button-fab">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+				<path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+				<path d="M0 0h24v24H0z" fill="none" />
+			</svg>
+		</button>
+
+		<script src="index.js" type="module"></script>
+	</body>
+</html>
