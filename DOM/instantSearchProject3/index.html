@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<title>Page</title>
+	</head>
+	<body>
+		<nav id="navbar">
+			<a href="#" class="nav-brand">App</a>
+			<ul>
+				<li class="nav-item"><a href="about.html">About us</a></li>
+				<li><a href="" class="nav-item btn btn-default">Register</a></li>
+			</ul>
+		</nav>
+
+		<div class="container" id="main">
+			<h1>User profile</h1>
+			<p>Use this page to update your profile details.</p>
+			<form id="user-form">
+				<label for="first-name">First name</label>
+				<input id="first-name" type="text" value="Sam" placeholder="Enter your first name" />
+				<label for="last-name">Last name</label>
+				<input id="last-name" type="text" value="Green" placeholder="Enter your last name" />
+				<div>
+					<input type="submit" value="Update" class="btn btn-outline" />
+				</div>
+			</form>
+		</div>
+
+		<footer id="footer-wrapper">
+			<a href="about.html" target="_blank">About us</a>
+			<a href="contact.html" target="_blank">Contact us</a>
+		</footer>
+		<script type="module" src="index.js"></script>
+	</body>
+</html>
