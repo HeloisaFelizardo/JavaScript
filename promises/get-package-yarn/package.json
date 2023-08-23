@@ -5,5 +5,8 @@
 	"main": "index.js",
 	"repository": " https://github.com/HeloisaFelizardo/get-package-yarn.git",
 	"author": "Heloisa Felizardo Campos",
-	"license": "MIT"
+	"license": "MIT",
+	"dependencies": {
+		"learnjavascript-online-npm": "^1.2.0"
+	}
 }
