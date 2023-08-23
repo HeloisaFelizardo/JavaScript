@@ -1,0 +1,9 @@
+{
+	"name": "package-yarn",
+	"version": "1.0.0",
+	"description": "Install package yarn",
+	"main": "index.js",
+	"repository": " https://github.com/HeloisaFelizardo/get-package-yarn.git",
+	"author": "Heloisa Felizardo Campos",
+	"license": "MIT"
+}
